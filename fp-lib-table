@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/libraries/footprints)(options "")(descr ""))
+  (lib (name yo6ssw)(type KiCad)(uri /home/benny/work/electronics/kicad-projects/gpsdo-hardware/libraries/footprints/yo6ssw.pretty)(options "")(descr ""))
 )
