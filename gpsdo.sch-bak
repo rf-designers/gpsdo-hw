@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "GPSDO + 10MHz and 100MHz distribution amplifier"
-Date "2021-01-07"
-Rev "0.10"
+Date "2021-01-12"
+Rev "0.11"
 Comp "Adrian Scripcă, Frédéric Boes"
 Comment1 ""
 Comment2 ""

@@ -1847,17 +1847,6 @@ Wire Wire Line
 Wire Wire Line
 	11250 3525 11350 3525
 $Comp
-L 74xx:74HC244 U4
-U 1 1 5D66821A
-P 2650 5800
-F 0 "U4" H 2825 6600 50  0000 C CNN
-F 1 "SN74HC244" H 2925 6500 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 2650 5800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 2650 5800 50  0001 C CNN
-	1    2650 5800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR013
 U 1 1 5D6694F4
 P 2150 6200
@@ -4663,8 +4652,6 @@ Wire Wire Line
 	9650 9075 9900 9075
 Text Notes 9575 9775 0    50   ~ 0
 74HC541???
-Text Notes 3125 6250 0    50   ~ 0
-74HC541???
 $Comp
 L 74xx:74HCT541 U8
 U 1 1 60008C59
@@ -4866,4 +4853,15 @@ Text Notes 9675 1475 0    50   ~ 0
 Mounting holes
 Text Notes 7975 1025 0    50   ~ 0
 GPS pins tapping
+$Comp
+L 74xx:74HCT541 U4
+U 1 1 603EBC54
+P 2650 5800
+F 0 "U4" H 2890 6580 50  0000 C CNN
+F 1 "SN74HC541DWR" H 3005 6480 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 2650 5800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc541.pdf" H 2650 5800 50  0001 C CNN
+	1    2650 5800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
