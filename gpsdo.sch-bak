@@ -2799,8 +2799,6 @@ Wire Wire Line
 	2480 7175 2630 7175
 Wire Wire Line
 	2630 7175 2630 7375
-Text GLabel 1280 7375 0    50   Input ~ 0
-V_IN
 Wire Wire Line
 	1280 7375 1380 7375
 Connection ~ 1380 7375
@@ -2980,8 +2978,6 @@ Wire Wire Line
 	2480 8175 2630 8175
 Wire Wire Line
 	2630 8175 2630 8375
-Text GLabel 1280 8375 0    50   Input ~ 0
-V_IN
 Wire Wire Line
 	1280 8375 1380 8375
 Connection ~ 1380 8375
@@ -4865,4 +4861,10 @@ $EndComp
 Wire Wire Line
 	9150 8475 8075 8475
 Connection ~ 9150 8475
+Text Notes 4650 6675 0    157  ~ 0
+Change C19 C20 footprint
+Text GLabel 1280 8375 0    50   Output ~ 0
+V_MMIC
+Text GLabel 1280 7375 0    50   Output ~ 0
+V_MMIC
 $EndSCHEMATC

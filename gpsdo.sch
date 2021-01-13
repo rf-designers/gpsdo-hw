@@ -2103,12 +2103,6 @@ GPS_ANTENNA
 Wire Wire Line
 	6600 2750 6425 2750
 Connection ~ 6425 2750
-NoConn ~ 4850 3250
-NoConn ~ 4850 3550
-NoConn ~ 4850 3650
-NoConn ~ 4850 3750
-NoConn ~ 4850 1950
-NoConn ~ 4850 2050
 NoConn ~ 5550 1550
 NoConn ~ 5450 1550
 Text GLabel 10800 8775 2    50   Output ~ 0
@@ -2234,8 +2228,6 @@ $EndComp
 Wire Wire Line
 	10600 8775 10800 8775
 Connection ~ 10600 8775
-NoConn ~ 4850 2550
-NoConn ~ 4850 2650
 NoConn ~ 8650 9275
 NoConn ~ 8650 9375
 NoConn ~ 8650 9475
@@ -2335,7 +2327,6 @@ Wire Wire Line
 	1200 5600 1300 5600
 Text GLabel 1225 5325 0    50   Input ~ 0
 V_GPS
-NoConn ~ 6250 3050
 $Comp
 L Device:C_Small C36
 U 1 1 5D6B9D10
@@ -2799,8 +2790,6 @@ Wire Wire Line
 	2480 7175 2630 7175
 Wire Wire Line
 	2630 7175 2630 7375
-Text GLabel 1280 7375 0    50   Input ~ 0
-V_IN
 Wire Wire Line
 	1280 7375 1380 7375
 Connection ~ 1380 7375
@@ -2980,8 +2969,6 @@ Wire Wire Line
 	2480 8175 2630 8175
 Wire Wire Line
 	2630 8175 2630 8375
-Text GLabel 1280 8375 0    50   Input ~ 0
-V_IN
 Wire Wire Line
 	1280 8375 1380 8375
 Connection ~ 1380 8375
@@ -4597,102 +4584,11 @@ F 3 "https://www.ti.com/lit/ds/symlink/sn74hc541.pdf" H 9150 9275 50  0001 C CNN
 $EndComp
 NoConn ~ 9650 9175
 NoConn ~ 8650 9175
-$Comp
-L Connector:Conn_01x01_Male J18
-U 1 1 601B9D2F
-P 8125 1400
-F 0 "J18" H 8233 1581 50  0000 C CNN
-F 1 "TAP_GPS_TX" H 8233 1490 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 1400 50  0001 C CNN
-F 3 "~" H 8125 1400 50  0001 C CNN
-	1    8125 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J19
-U 1 1 601BA021
-P 8125 1650
-F 0 "J19" H 8233 1831 50  0000 C CNN
-F 1 "TAP_GPS_RX" H 8233 1740 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 1650 50  0001 C CNN
-F 3 "~" H 8125 1650 50  0001 C CNN
-	1    8125 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J20
-U 1 1 601BBEF4
-P 8125 1900
-F 0 "J20" H 8233 2081 50  0000 C CNN
-F 1 "TAP_DAC_SDA" H 8233 1990 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 1900 50  0001 C CNN
-F 3 "~" H 8125 1900 50  0001 C CNN
-	1    8125 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J21
-U 1 1 601BBEFA
-P 8125 2150
-F 0 "J21" H 8233 2331 50  0000 C CNN
-F 1 "TAP_DAC_SCL" H 8233 2240 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 2150 50  0001 C CNN
-F 3 "~" H 8125 2150 50  0001 C CNN
-	1    8125 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J22
-U 1 1 601EC337
-P 8125 2400
-F 0 "J22" H 8233 2581 50  0000 C CNN
-F 1 "TAP_GPS_RF_IN" H 8233 2490 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 2400 50  0001 C CNN
-F 3 "~" H 8125 2400 50  0001 C CNN
-	1    8125 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J23
-U 1 1 601EC33D
-P 8125 2650
-F 0 "J23" H 8233 2831 50  0000 C CNN
-F 1 "TAP_GPS_TPLS" H 8233 2740 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 2650 50  0001 C CNN
-F 3 "~" H 8125 2650 50  0001 C CNN
-	1    8125 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J24
-U 1 1 6021D92D
-P 8125 2900
-F 0 "J24" H 8233 3081 50  0000 C CNN
-F 1 "TAP_GPS_V_ANT" H 8233 2990 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8125 2900 50  0001 C CNN
-F 3 "~" H 8125 2900 50  0001 C CNN
-	1    8125 2900
-	1    0    0    -1  
-$EndComp
 Text GLabel 5750 1375 1    50   Input ~ 0
 GPS_V_ANT
 Wire Wire Line
 	5750 1375 5750 1425
 Connection ~ 5750 1425
-Text GLabel 8325 1400 2    50   BiDi ~ 0
-GPS_TX
-Text GLabel 8325 1650 2    50   BiDi ~ 0
-GPS_RX
-Text GLabel 8325 1900 2    50   BiDi ~ 0
-DAC_SDA
-Text GLabel 8325 2150 2    50   BiDi ~ 0
-DAC_SCL
-Text GLabel 8325 2400 2    50   BiDi ~ 0
-GPS_RF_IN
-Text GLabel 8325 2650 2    50   BiDi ~ 0
-GPS_TPLS
-Text GLabel 8325 2900 2    50   Input ~ 0
-GPS_V_ANT
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 602867DF
@@ -4783,8 +4679,6 @@ F 3 "" H 10425 2325 50  0001 C CNN
 $EndComp
 Text Notes 9675 1475 0    50   ~ 0
 Mounting holes
-Text Notes 7975 1025 0    50   ~ 0
-GPS pins tapping
 $Comp
 L 74xx:74HCT541 U4
 U 1 1 603EBC54
@@ -4867,4 +4761,107 @@ Wire Wire Line
 Connection ~ 9150 8475
 Text Notes 4650 6675 0    157  ~ 0
 Change C19 C20 footprint
+Text GLabel 1280 8375 0    50   Output ~ 0
+V_MMIC
+Text GLabel 1280 7375 0    50   Output ~ 0
+V_MMIC
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 608BBA72
+P 4650 2050
+F 0 "J?" H 4758 2231 50  0000 C CNN
+F 1 "USB_DP" H 4470 2055 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2050 50  0001 C CNN
+F 3 "~" H 4650 2050 50  0001 C CNN
+	1    4650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J18
+U 1 1 601B9D2F
+P 4650 1950
+F 0 "J18" H 4758 2131 50  0000 C CNN
+F 1 "USB_DM" H 4460 1955 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 1950 50  0001 C CNN
+F 3 "~" H 4650 1950 50  0001 C CNN
+	1    4650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 608C2985
+P 4650 2650
+F 0 "J?" H 4758 2831 50  0000 C CNN
+F 1 "SCL" H 4470 2655 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2650 50  0001 C CNN
+F 3 "~" H 4650 2650 50  0001 C CNN
+	1    4650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 608C298B
+P 4650 2550
+F 0 "J?" H 4758 2731 50  0000 C CNN
+F 1 "SDA" H 4460 2555 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2550 50  0001 C CNN
+F 3 "~" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 608F39C4
+P 4650 3650
+F 0 "J?" H 4758 3831 50  0000 C CNN
+F 1 "RESET" H 4470 3655 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3650 50  0001 C CNN
+F 3 "~" H 4650 3650 50  0001 C CNN
+	1    4650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 608F39CA
+P 4650 3550
+F 0 "J?" H 4758 3731 50  0000 C CNN
+F 1 "BOOT" H 4460 3555 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3550 50  0001 C CNN
+F 3 "~" H 4650 3550 50  0001 C CNN
+	1    4650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 60923D8F
+P 4650 3250
+F 0 "J?" H 4758 3431 50  0000 C CNN
+F 1 "FREQ0" H 4470 3255 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3250 50  0001 C CNN
+F 3 "~" H 4650 3250 50  0001 C CNN
+	1    4650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 60923D95
+P 4650 3750
+F 0 "J?" H 4758 3931 50  0000 C CNN
+F 1 "D_SEL" H 4460 3755 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3750 50  0001 C CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+	1    4650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 60A18725
+P 6250 3250
+F 0 "J?" H 6358 3431 50  0000 C CNN
+F 1 "Freq Out" H 6060 3255 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6250 3250 50  0001 C CNN
+F 3 "~" H 6250 3250 50  0001 C CNN
+	1    6250 3250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
