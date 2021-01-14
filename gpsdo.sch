@@ -161,7 +161,7 @@ F 3 "" H 2100 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1900 1100 1    50   Input ~ 0
-V_MMIC
+V_MMIC2
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5D5BE806
@@ -398,8 +398,8 @@ L Device:C_Small C18
 U 1 1 5D64A697
 P 6125 5325
 F 0 "C18" V 6225 5350 50  0000 R CNN
-F 1 "22uF" V 6225 5600 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6125 5325 50  0001 C CNN
+F 1 "47uF" V 6225 5600 50  0000 R CNN
+F 2 "yo6ssw:leaded_elec" H 6125 5325 50  0001 C CNN
 F 3 "~" H 6125 5325 50  0001 C CNN
 	1    6125 5325
 	0    1    1    0   
@@ -2103,8 +2103,6 @@ GPS_ANTENNA
 Wire Wire Line
 	6600 2750 6425 2750
 Connection ~ 6425 2750
-NoConn ~ 5550 1550
-NoConn ~ 5450 1550
 Text GLabel 10800 8775 2    50   Output ~ 0
 10MHZ_FILTER
 $Comp
@@ -3078,7 +3076,7 @@ U 1 1 5D9160F1
 P 6450 6025
 F 0 "C19" H 6358 5978 50  0000 R CNN
 F 1 "22uF" H 6358 6071 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6450 6025 50  0001 C CNN
+F 2 "yo6ssw:leaded_elec" H 6450 6025 50  0001 C CNN
 F 3 "~" H 6450 6025 50  0001 C CNN
 	1    6450 6025
 	1    0    0    1   
@@ -3089,7 +3087,7 @@ U 1 1 5D916B6D
 P 6925 6025
 F 0 "C20" H 6833 5978 50  0000 R CNN
 F 1 "22uF" H 6833 6071 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6925 6025 50  0001 C CNN
+F 2 "yo6ssw:leaded_elec" H 6925 6025 50  0001 C CNN
 F 3 "~" H 6925 6025 50  0001 C CNN
 	1    6925 6025
 	1    0    0    1   
@@ -3146,8 +3144,8 @@ $Comp
 L RF_GPS:LEA-M8F U6
 U 1 1 5D58FD89
 P 5550 2750
-F 0 "U6" H 6325 1975 50  0000 C CNN
-F 1 "LEA-M8F" H 6375 1875 50  0000 C CNN
+F 0 "U6" H 6415 3510 50  0000 C CNN
+F 1 "LEA-M8F" H 6495 3410 50  0000 C CNN
 F 2 "yo6ssw:LEA-8MF" H 5950 1600 50  0001 C CNN
 F 3 "https://www.u-blox.com/sites/default/files/products/documents/LEA-M8F_DataSheet_%28UBX-14001772%29.pdf" H 5550 2750 50  0001 C CNN
 	1    5550 2750
@@ -3640,8 +3638,6 @@ F 3 "~" H 3675 5000 50  0001 C CNN
 	1    3675 5000
 	1    0    0    1   
 $EndComp
-Text GLabel 3675 4850 1    50   Input ~ 0
-V_ARDUINO
 Wire Wire Line
 	3675 4850 3675 4900
 $Comp
@@ -4022,7 +4018,7 @@ U 1 1 5FF13187
 P 8075 5550
 F 0 "C13" V 7950 5575 50  0000 L CNN
 F 1 "47uF/10V" V 7950 5150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8075 5550 50  0001 C CNN
+F 2 "yo6ssw:leaded_elec" H 8075 5550 50  0001 C CNN
 F 3 "~" H 8075 5550 50  0001 C CNN
 	1    8075 5550
 	0    -1   -1   0   
@@ -4518,7 +4514,7 @@ L Device:CP1_Small C78
 U 1 1 5FFA5416
 P 1460 10585
 F 0 "C78" H 1660 10635 50  0000 R CNN
-F 1 "10uF/16V,ESR<3" H 2210 10535 50  0000 R CNN
+F 1 "NF" H 1650 10525 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1460 10585 50  0001 C CNN
 F 3 "~" H 1460 10585 50  0001 C CNN
 	1    1460 10585
@@ -4584,8 +4580,6 @@ F 3 "https://www.ti.com/lit/ds/symlink/sn74hc541.pdf" H 9150 9275 50  0001 C CNN
 $EndComp
 NoConn ~ 9650 9175
 NoConn ~ 8650 9175
-Text GLabel 5750 1375 1    50   Input ~ 0
-GPS_V_ANT
 Wire Wire Line
 	5750 1375 5750 1425
 Connection ~ 5750 1425
@@ -4766,12 +4760,12 @@ V_MMIC
 Text GLabel 1280 7375 0    50   Output ~ 0
 V_MMIC
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J19
 U 1 1 608BBA72
 P 4650 2050
-F 0 "J?" H 4758 2231 50  0000 C CNN
+F 0 "J19" H 4758 2231 50  0000 C CNN
 F 1 "USB_DP" H 4470 2055 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2050 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 2050 50  0001 C CNN
 F 3 "~" H 4650 2050 50  0001 C CNN
 	1    4650 2050
 	1    0    0    -1  
@@ -4782,86 +4776,121 @@ U 1 1 601B9D2F
 P 4650 1950
 F 0 "J18" H 4758 2131 50  0000 C CNN
 F 1 "USB_DM" H 4460 1955 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 1950 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 1950 50  0001 C CNN
 F 3 "~" H 4650 1950 50  0001 C CNN
 	1    4650 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J21
 U 1 1 608C2985
 P 4650 2650
-F 0 "J?" H 4758 2831 50  0000 C CNN
+F 0 "J21" H 4758 2831 50  0000 C CNN
 F 1 "SCL" H 4470 2655 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2650 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 2650 50  0001 C CNN
 F 3 "~" H 4650 2650 50  0001 C CNN
 	1    4650 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J20
 U 1 1 608C298B
 P 4650 2550
-F 0 "J?" H 4758 2731 50  0000 C CNN
+F 0 "J20" H 4758 2731 50  0000 C CNN
 F 1 "SDA" H 4460 2555 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2550 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 2550 50  0001 C CNN
 F 3 "~" H 4650 2550 50  0001 C CNN
 	1    4650 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J24
 U 1 1 608F39C4
 P 4650 3650
-F 0 "J?" H 4758 3831 50  0000 C CNN
+F 0 "J24" H 4758 3831 50  0000 C CNN
 F 1 "RESET" H 4470 3655 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3650 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 3650 50  0001 C CNN
 F 3 "~" H 4650 3650 50  0001 C CNN
 	1    4650 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J23
 U 1 1 608F39CA
 P 4650 3550
-F 0 "J?" H 4758 3731 50  0000 C CNN
+F 0 "J23" H 4758 3731 50  0000 C CNN
 F 1 "BOOT" H 4460 3555 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3550 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 3550 50  0001 C CNN
 F 3 "~" H 4650 3550 50  0001 C CNN
 	1    4650 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J22
 U 1 1 60923D8F
 P 4650 3250
-F 0 "J?" H 4758 3431 50  0000 C CNN
+F 0 "J22" H 4758 3431 50  0000 C CNN
 F 1 "FREQ0" H 4470 3255 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3250 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 3250 50  0001 C CNN
 F 3 "~" H 4650 3250 50  0001 C CNN
 	1    4650 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J25
 U 1 1 60923D95
 P 4650 3750
-F 0 "J?" H 4758 3931 50  0000 C CNN
+F 0 "J25" H 4758 3931 50  0000 C CNN
 F 1 "D_SEL" H 4460 3755 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 3750 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 4650 3750 50  0001 C CNN
 F 3 "~" H 4650 3750 50  0001 C CNN
 	1    4650 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J26
 U 1 1 60A18725
 P 6250 3250
-F 0 "J?" H 6358 3431 50  0000 C CNN
+F 0 "J26" H 6358 3431 50  0000 C CNN
 F 1 "Freq Out" H 6060 3255 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6250 3250 50  0001 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 6250 3250 50  0001 C CNN
 F 3 "~" H 6250 3250 50  0001 C CNN
 	1    6250 3250
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Conn_01x01_Male J27
+U 1 1 6006A847
+P 5450 1350
+F 0 "J27" H 5558 1531 50  0000 C CNN
+F 1 "VCC_OUT" H 5260 1355 50  0000 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 5450 1350 50  0001 C CNN
+F 3 "~" H 5450 1350 50  0001 C CNN
+	1    5450 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J28
+U 1 1 6006B4BF
+P 5550 1350
+F 0 "J28" H 5658 1531 50  0000 C CNN
+F 1 "VDD_USB" H 5360 1355 50  0000 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 5550 1350 50  0001 C CNN
+F 3 "~" H 5550 1350 50  0001 C CNN
+	1    5550 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J29
+U 1 1 6006C5BC
+P 5750 1225
+F 0 "J29" H 5858 1406 50  0000 C CNN
+F 1 "V_ANT" H 5560 1230 50  0000 C CNN
+F 2 "yo6ssw:Single_SMD_Pad" H 5750 1225 50  0001 C CNN
+F 3 "~" H 5750 1225 50  0001 C CNN
+	1    5750 1225
+	0    1    1    0   
+$EndComp
+Text GLabel 3675 4850 1    50   Input ~ 0
+ARDUINO_5V
 $EndSCHEMATC
