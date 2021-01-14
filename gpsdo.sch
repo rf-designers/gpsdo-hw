@@ -402,7 +402,7 @@ F 1 "47uF" V 6225 5600 50  0000 R CNN
 F 2 "yo6ssw:leaded_elec" H 6125 5325 50  0001 C CNN
 F 3 "~" H 6125 5325 50  0001 C CNN
 	1    6125 5325
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR041
@@ -3079,7 +3079,7 @@ F 1 "22uF" H 6358 6071 50  0000 R CNN
 F 2 "yo6ssw:leaded_elec" H 6450 6025 50  0001 C CNN
 F 3 "~" H 6450 6025 50  0001 C CNN
 	1    6450 6025
-	1    0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C20
@@ -3090,7 +3090,7 @@ F 1 "22uF" H 6833 6071 50  0000 R CNN
 F 2 "yo6ssw:leaded_elec" H 6925 6025 50  0001 C CNN
 F 3 "~" H 6925 6025 50  0001 C CNN
 	1    6925 6025
-	1    0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5975 5825 6100 5825
@@ -3146,7 +3146,7 @@ U 1 1 5D58FD89
 P 5550 2750
 F 0 "U6" H 6415 3510 50  0000 C CNN
 F 1 "LEA-M8F" H 6495 3410 50  0000 C CNN
-F 2 "yo6ssw:LEA-8MF" H 5950 1600 50  0001 C CNN
+F 2 "RF_GPS:ublox_LEA" H 5950 1600 50  0001 C CNN
 F 3 "https://www.u-blox.com/sites/default/files/products/documents/LEA-M8F_DataSheet_%28UBX-14001772%29.pdf" H 5550 2750 50  0001 C CNN
 	1    5550 2750
 	1    0    0    -1  
@@ -3762,12 +3762,12 @@ $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5D7034AA
-P 2160 9880
-F 0 "#PWR09" H 2160 9630 50  0001 C CNN
-F 1 "GND" H 2165 9703 50  0001 C CNN
-F 2 "" H 2160 9880 50  0001 C CNN
-F 3 "" H 2160 9880 50  0001 C CNN
-	1    2160 9880
+P 2060 9880
+F 0 "#PWR09" H 2060 9630 50  0001 C CNN
+F 1 "GND" H 2065 9703 50  0001 C CNN
+F 2 "" H 2060 9880 50  0001 C CNN
+F 3 "" H 2060 9880 50  0001 C CNN
+	1    2060 9880
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4341,7 +4341,7 @@ F 3 "~" H 13440 980 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text GLabel 14110 880  1    50   Input ~ 0
-V_MMIC2
+V_MMIC
 $Comp
 L Device:C_Small C76
 U 1 1 6022D399
@@ -4446,12 +4446,12 @@ $EndComp
 $Comp
 L power:GND #PWR083
 U 1 1 5FFA53F2
-P 2160 10960
-F 0 "#PWR083" H 2160 10710 50  0001 C CNN
-F 1 "GND" H 2165 10783 50  0001 C CNN
-F 2 "" H 2160 10960 50  0001 C CNN
-F 3 "" H 2160 10960 50  0001 C CNN
-	1    2160 10960
+P 2060 10960
+F 0 "#PWR083" H 2060 10710 50  0001 C CNN
+F 1 "GND" H 2065 10783 50  0001 C CNN
+F 2 "" H 2060 10960 50  0001 C CNN
+F 3 "" H 2060 10960 50  0001 C CNN
+	1    2060 10960
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4574,7 +4574,7 @@ P 9150 9275
 F 0 "U8" H 9390 10055 50  0000 C CNN
 F 1 "SN74HC541DWR" H 9505 9955 50  0000 C CNN
 F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 9150 9275 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc541.pdf" H 9150 9275 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HCT541" H 9150 9275 50  0001 C CNN
 	1    9150 9275
 	1    0    0    -1  
 $EndComp
@@ -4680,7 +4680,7 @@ P 2650 5800
 F 0 "U4" H 2890 6580 50  0000 C CNN
 F 1 "SN74HC541DWR" H 3005 6480 50  0000 C CNN
 F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 2650 5800 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc541.pdf" H 2650 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HCT541" H 2650 5800 50  0001 C CNN
 	1    2650 5800
 	1    0    0    -1  
 $EndComp
@@ -4893,4 +4893,26 @@ F 3 "~" H 5750 1225 50  0001 C CNN
 $EndComp
 Text GLabel 3675 4850 1    50   Input ~ 0
 ARDUINO_5V
+$Comp
+L power:GND #PWR0131
+U 1 1 6004503B
+P 2260 9880
+F 0 "#PWR0131" H 2260 9630 50  0001 C CNN
+F 1 "GND" H 2265 9703 50  0001 C CNN
+F 2 "" H 2260 9880 50  0001 C CNN
+F 3 "" H 2260 9880 50  0001 C CNN
+	1    2260 9880
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 6007817D
+P 2260 10960
+F 0 "#PWR0132" H 2260 10710 50  0001 C CNN
+F 1 "GND" H 2265 10783 50  0001 C CNN
+F 2 "" H 2260 10960 50  0001 C CNN
+F 3 "" H 2260 10960 50  0001 C CNN
+	1    2260 10960
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
