@@ -4753,8 +4753,6 @@ $EndComp
 Wire Wire Line
 	9150 8475 8075 8475
 Connection ~ 9150 8475
-Text Notes 4650 6675 0    157  ~ 0
-Change C19 C20 footprint
 Text GLabel 1280 8375 0    50   Output ~ 0
 V_MMIC
 Text GLabel 1280 7375 0    50   Output ~ 0
